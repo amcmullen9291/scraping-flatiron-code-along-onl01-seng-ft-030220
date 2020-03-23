@@ -19,7 +19,7 @@ def get_page
   end
  
  def get_courses
-  self.get_page.css(".post")
+  self.get_page.css(".post") #finds the CSS headers. works off of               the get_pate method
 end
   # binding.pry
 
