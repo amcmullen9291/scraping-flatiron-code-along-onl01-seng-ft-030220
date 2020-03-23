@@ -18,10 +18,8 @@ def get_page
     #end
   end
  
-end 
-      binding.pry
-  end
- 
+  # binding.pry
+
 end
  
 Scraper.new.get_page
