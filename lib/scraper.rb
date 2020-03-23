@@ -17,7 +17,7 @@ def get_page
       course.description = post.css("p").text
     end
   end 
-      # binding.pry
+      binding.pry
   end
  
 end
