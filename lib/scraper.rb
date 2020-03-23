@@ -29,7 +29,7 @@ def get_page
     course.title = post.css("h2").text
     course.schedule = post.css(".date").text
     course.description = post.css("p").text
-  end # operates on the previous method. makes instances of Course class
+  end # operates on the previous method. makes an instance and displays name,         schdeule description.
 end
 
 end
