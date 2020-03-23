@@ -18,10 +18,19 @@ def get_page
     #end
   end
  
- def get_courses
+  def get_courses
   self.get_page.css(".post") #finds the CSS headers. works off of               the get_pate method
-end
+  end
   # binding.pry
+  
+  def make_courses
+  self.get_courses.each do |post|
+    course = Course.new
+    course.title = post.css("h2").text
+    course.schedule = post.css(".date").text
+    course.description = post.css("p").text
+  end # operates on the previous method. makes instances of Course class
+end
 
 end
  
